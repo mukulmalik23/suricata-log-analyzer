@@ -33,7 +33,24 @@ This project is a real-time Suricata log analyzer built using Python, Docker, an
 
 
 \## 📂 Project Structure
+git clone https://github.com/yourusername/suricata-log-analyzer.git
+cd suricata-log-analyzer
+docker compose up --build
 
+Then visit: http://localhost:5601
+📈 Kibana Setup
+Visit http://localhost:5601
+
+Click “Explore on my own”
+
+Go to Stack Management → Index Patterns
+
+Create a new pattern: suricata-logs*
+
+Start analyzing Suricata logs
+
+📬 Feedback
+Feel free to ⭐ the repo and message me with suggestions or improvements!
 
 
 
