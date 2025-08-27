@@ -1,4 +1,4 @@
-\# Suricata Log Analyzer 🚨📊
+#Suricata Log Analyzer 🚨📊
 
 
 
