@@ -14,17 +14,17 @@ This project is a real-time Suricata log analyzer built using Python, Docker, an
 
 
 
-\- \*\*Suricata\*\* – Intrusion Detection System  
+- **Suricata**         – Intrusion Detection System  
 
-\- \*\*Python\*\* – Log parsing and event forwarding  
+- **Python**           – Log parsing and event forwarding  
 
-\- \*\*Elasticsearch\*\* – Central log storage and search  
+- **Elasticsearch**    – Central log storage and search  
 
-\- \*\*Kibana\*\* – Visualization dashboard  
+- **Kibana**           – Visualization dashboard  
 
-\- \*\*Docker Compose\*\* – Container orchestration  
+- **Docker Compose**   – Container orchestration  
 
-\- \*\*GitHub Actions\*\* – CI pipeline  
+- **GitHub Actions**   – CI pipeline  
 
 
 
@@ -33,16 +33,18 @@ This project is a real-time Suricata log analyzer built using Python, Docker, an
 
 
 ## 📂 Project Structure
-'''
+```
 git clone https://github.com/yourusername/suricata-log-analyzer.git
 cd suricata-log-analyzer
 docker compose up --build
-'''
+```
 
 Then visit: http://localhost:5601
 
 📈 Kibana Setup
+```
 Visit http://localhost:5601
+```
 
 Click “Explore on my own”
 
