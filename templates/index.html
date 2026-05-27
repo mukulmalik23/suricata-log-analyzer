@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Suricata SOC Dashboard</title>
+
+```
+<style>
+
+    body {
+        background-color: #111;
+        color: white;
+        font-family: Arial;
+        padding: 20px;
+    }
+
+    .card {
+        background-color: #1f1f1f;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .alert-box {
+        border-left: 5px solid #00ff88;
+        background-color: #1a1a1a;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        color: #00ff88;
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<h1>Suricata SOC Dashboard</h1>
+
+<div class="card">
+    <h2>Total Events: {{ total_alerts }}</h2>
+</div>
+
+<div class="card">
+    <h2>HTTP Events: {{ http_count }}</h2>
+</div>
+
+<div class="card">
+    <h2>Unique Source IPs: {{ unique_ips }}</h2>
+</div>
+
+<h2>Latest Events</h2>
+
+{% for alert in alerts %}
+
+<div class="alert-box">
+
+```
+<p><b>Time:</b> {{ alert.timestamp }}</p>
+
+<p><b>Source:</b> {{ alert.src_ip }}</p>
+
+<p><b>Destination:</b> {{ alert.dest_ip }}</p>
+
+<p><b>Protocol:</b> {{ alert.proto }}</p>
+
+<p><b>Event:</b> {{ alert.event_type }}</p>
+```
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

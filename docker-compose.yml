@@ -1,0 +1,8 @@
+services:
+  suricata:
+    build: .
+    container_name: suricata_container
+    privileged: true
+    network_mode: host
+    volumes:
+      - ./logs:/var/log/suricata
